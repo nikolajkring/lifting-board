@@ -5,7 +5,7 @@ const CONFIG={
 const LIFTS=[
   {key:"squat",label:"SQUAT",class:"squat-bg"},
   {key:"bench",label:"BENCH",class:"bench-bg"},
-  {key:"dead", label:"DEAD", class:"dead-bg"}
+  {key:"dead", label:"DEADLIFT", class:"dead-bg"}
 ];
 const WEIGHT_CLASSES={
   men:  ["Below 66 kg","Below 74 kg","Below 83 kg","Below 93 kg","Below 105 kg","105 kg and above"],
@@ -73,7 +73,8 @@ function renderTable(gender,records){
         const slot=document.createElement("div");
         if(i<recs.length){
           const r=recs[i];slot.className="slot";
-          slot.innerHTML='<span class="rn">'+( i+1)+'</span><div class="si"><div class="sn">'+esc(r.name)+'</div><div class="sw"><span class="sk">'+r.weight+'</span><span class="su"> kg</span></div><div class="sd">'+r.date+'</div></div>';
+          const dateOnly=r.date.split(" ")[0]||r.date;
+          slot.innerHTML='<span class="rn">'+( i+1)+'</span><div class="si"><div class="sn">'+esc(r.name)+'</div><div class="sw"><span class="sk">'+r.weight+'</span><span class="su">kg</span></div></div><span class="sd">'+dateOnly+'</span>';
         }else{slot.className="empty-slot";slot.innerHTML='<span class="en">'+( i+1)+'</span><span class="ed">—</span>';}
         inner.appendChild(slot);
       }

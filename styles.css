@@ -21,10 +21,8 @@ header{flex-shrink:0;height:10vh;background:var(--surface);border-bottom:2px sol
 @keyframes pulse{0%,100%{box-shadow:0 0 4px #4caf6e88}50%{box-shadow:0 0 10px #4caf6e}}
 .header-spacer{flex:1}
 .qr-panel{display:flex;align-items:center;gap:1vw;padding:.8vh 0 .8vh 1.5vw;border-left:1px solid var(--border);flex-shrink:0}
-.qr-panel img{height:8.5vh;width:auto;display:block;border-radius:.4vh}
+.qr-panel img{height:12vh;width:auto;display:block;border-radius:.4vh}
 .qr-text{display:flex;flex-direction:column;gap:.15vh}
-.qr-label{font-size:1.1vh;color:var(--muted);text-transform:uppercase;letter-spacing:.18em}
-.qr-cta{font-family:"Bebas Neue";font-size:2.4vh;color:var(--gold);letter-spacing:.1em;line-height:1}
 .boards{flex:1;min-height:0;position:relative}
 .panel{position:absolute;inset:0;display:flex;flex-direction:column;opacity:0;pointer-events:none;transition:opacity .5s ease}
 .panel.active{opacity:1;pointer-events:auto}
@@ -42,7 +40,7 @@ tbody{flex:1;display:flex;flex-direction:column;gap:.3vh;min-height:0}
 tbody tr{flex:1;display:flex;gap:.3vw;min-height:0}
 td{padding:0;display:flex;min-width:0}
 td.lift-col{flex:0 0 4.5vw}
-.lift-badge{width:100%;display:flex;align-items:center;justify-content:center;border-radius:.4vh;font-family:"Bebas Neue";font-size:clamp(10px,1.8vh,22px);letter-spacing:.12em;color:#fff;writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg)}
+.lift-badge{width:100%;display:flex;align-items:center;justify-content:center;border-radius:.4vh;font-family:"Bebas Neue";font-size:clamp(12px,2.6vh,32px);letter-spacing:.12em;color:#fff;writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg)}
 .squat-bg{background:linear-gradient(180deg,#c42a1c,var(--squat))}
 .bench-bg{background:linear-gradient(180deg,#1356a0,var(--bench))}
 .dead-bg{background:linear-gradient(180deg,#226840,var(--dead))}
@@ -51,18 +49,18 @@ td.cell{flex:1;min-width:0}
 .row-squat .cell-inner{border-top:3px solid var(--squat)}
 .row-bench .cell-inner{border-top:3px solid var(--bench)}
 .row-dead  .cell-inner{border-top:3px solid var(--dead)}
-.slot,.empty-slot{flex:1;min-height:0;display:flex;align-items:center;gap:.4vw;padding:0 .4vw;border-bottom:1px solid rgba(255,255,255,.04);overflow:hidden}
+.slot,.empty-slot{flex:1;min-height:0;display:flex;align-items:center;gap:.6vw;padding:0 .4vw;border-bottom:1px solid rgba(255,255,255,.04);overflow:hidden}
 .slot:last-child,.empty-slot:last-child{border-bottom:none}
 .rn{font-family:"Bebas Neue";font-size:clamp(12px,2.2vh,28px);width:1.3vw;flex-shrink:0;text-align:center;line-height:1;color:var(--dim)}
 .slot:nth-child(1) .rn{color:#c9a227}
 .slot:nth-child(2) .rn{color:#9e9e9e}
 .slot:nth-child(3) .rn{color:#a0522d}
+.sn{font-size:clamp(9px,1.5vh,16px);font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .si{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center}
-.sn{font-size:clamp(8px,1.2vh,14px);font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sw{display:flex;align-items:baseline;gap:.2vw}
-.sk{font-family:"Bebas Neue";font-size:clamp(16px,3.2vh,42px);line-height:1;color:var(--text)}
-.su{font-size:clamp(8px,1.1vh,14px);color:var(--muted)}
-.sd{font-size:clamp(7px,1vh,12px);color:var(--dim)}
+.sk{font-family:"Bebas Neue";font-size:clamp(18px,3.2vh,40px);line-height:1;color:var(--text)}
+.su{font-size:clamp(9px,1.4vh,16px);color:var(--muted)}
+.sd{font-size:clamp(10px,1.5vh,16px);color:var(--muted);flex-shrink:0;white-space:nowrap}
 .empty-slot .en{font-family:"Bebas Neue";font-size:clamp(10px,1.6vh,20px);color:var(--border)}
 .empty-slot .ed{font-size:clamp(8px,1.1vh,13px);color:var(--border);margin-left:.3vw}
 .toast{position:fixed;bottom:2vh;left:50%;transform:translateX(-50%);background:var(--surface);border:1px solid var(--border);color:var(--muted);padding:.7vh 2vw;border-radius:.4vh;font-size:1.3vh;opacity:0;pointer-events:none;transition:opacity .3s;z-index:99}
