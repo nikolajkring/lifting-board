@@ -4,7 +4,7 @@ const CONFIG={
 };
 const LIFTS=[
   {key:"squat",label:"SQUAT",class:"squat-bg"},
-  {key:"bench",label:"BENCH",class:"bench-bg"},
+  {key:"bench",label:"BENCH PRESS",class:"bench-bg"},
   {key:"dead", label:"DEADLIFT", class:"dead-bg"}
 ];
 const WEIGHT_CLASSES={
